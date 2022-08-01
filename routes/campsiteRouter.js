@@ -231,5 +231,3 @@ campsiteRouter
   });
 
 module.exports = campsiteRouter;
-
-module.exports = campsiteRouter;
