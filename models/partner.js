@@ -1,5 +1,5 @@
-import { mongoose } from "mongoose";
-const { Schema } = mongoose;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const partnerSchema = new Schema(
   {
@@ -15,16 +15,15 @@ const partnerSchema = new Schema(
     featured: {
       type: Boolean,
     },
-    description:{
-        type: String,
-        required: true
-    }
+    description: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
   }
 );
-
 
 const Partner = mongoose.model("Partner", partnerSchema);
 
